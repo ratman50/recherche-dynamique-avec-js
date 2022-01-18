@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+  list-style: none;
+  outline: none;
+  box-sizing: border-box;
+}
+@import "./_global.scss";
+main {
+  display: flex;
+}
+
+/* style nav starts */
+.nav {
+  /* flex: 2 1 auto; */
+  border-right: 1px solid #999;
+  height: 100vh;
+  background-color: #eee;
+}
+@import "./nav/__title.scss";
+@import "./nav/__logo.scss";
+@import "./nav/__user.scss";
+@import "./nav/__link.scss";
+@import "./nav/__link_active.scss";
+@import "./nav/__i.scss";
+
+/* style nav ends */
+
+/* style database starts */
+.database {
+  flex: 10 1 auto;
+}
+@import "./database/__inner.scss";
+@import "./database/__search.scss";
+@import "./database/__input.scss";
+@import "./database/__results.scss";
+@import "./database/__content.scss";
+/* style database ends */

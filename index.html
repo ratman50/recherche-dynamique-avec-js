@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <title>Recherche Dynamique</title>
+</head>
+
+<body>
+    <main>
+        <div class="nav">
+            <div class="nav__title">
+                <img src="./images/logo.png" class="nav__logo" alt="logo">
+                <p class="nav__user">users</p>
+            </div>
+            <div class="nav__menu">
+                <nav class="dashboard">
+                    <span></span>
+                    <li class="nav__link"> <i class="nav__i fas fa-chart-pie"></i> <span>dashboard</span></li>
+                    <li class="nav__link"><i class="nav__i far fa-comment"></i> <span>messenger</span> </li>
+                    <li class="nav__link nav__link_active"><i class="nav__i fas fa-database"></i> <span>database</span>
+                    </li>
+                    <li class="nav__link"><i class="far fa-calendar nav__i "></i> <span>calendar</span></li>
+                </nav>
+            </div>
+        </div>
+        <div class="database">
+            <div class="database__inner">
+                <form class="database__search">
+                    <i class="fas fa-search"></i>
+                    <input type="text"  class="database__input"placeholder="look for an user">
+
+                </form>
+                <div class="database__results">
+                    <h3>Database Results</h3>
+                    <div class="database__content user">
+                        <div class="user__name">
+                            <h3 class="title">name</h3>
+                        </div>
+                        <div class="user__mail">
+                            <h3 class="title">email</h3>
+                        </div>
+                        <div class="user__phone">
+                            <h3  class="title">phone</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script  src="./src/index.js" ></script>
+</body>
+
+</html>
